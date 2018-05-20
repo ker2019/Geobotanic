@@ -4,7 +4,7 @@ import java.awt.Graphics
 import java.awt.image.BufferedImage
 import javax.swing.JComponent
 
-class Field : JComponent() {
+class ImageView : JComponent() {
     var image: BufferedImage? = null
         set(value) {
             field = value

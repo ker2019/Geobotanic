@@ -5,12 +5,12 @@ import java.util.*
 val roundsCount = 100000
 val averageRadius = 10
 val radiusDiviasion = 15
-val targetDensity = 0.6
 
 fun buildImage(): BufferedImage? {
     val random = Random()
     val image = BufferedImage(1000, 1000, BufferedImage.TYPE_INT_RGB)
     val g = image.createGraphics()
+    val targetDensity = random.nextDouble()
 
     g.color = Color.WHITE
     g.fillRect(0, 0, image.width, image.height)
